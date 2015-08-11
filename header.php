@@ -2,7 +2,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php wp_title( '', true, 'right' ); ?></title>
-
+	<LINK REL="SHORTCUT ICON" HREF="<?php echo get_template_directory_uri().'/favicon.png'?>">
 
 	<!-- Mobile Specific Metas
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->

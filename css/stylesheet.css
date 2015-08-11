@@ -455,6 +455,55 @@ footer img {
 	margin: 0 0 0px;
 }
 
+ul.projekteindex {
+	width:100%;
+	
+}
+ul.projekteindex li {	
+	padding:20px 0;
+	list-style-type: none;
+	display: inline-block;
+	border-bottom:1px solid #999;
+	width: 50%;
+}
+ul.projekteindex hr {
+	margin:0;
+	border-color:#999;
+}
+@media(max-width:790px){
+	ul.projekteindex li {		
+		width: 100%;
+	}
+}
+ul.projekteindex li:last-child {
+ /* test*/
+}
+.projekteindex_headline{
+	margin:0;
+}
+
+ul.projekteindex li a {
+	font-weight: bold;
+	color:black;
+}
+ul.projekteindex li a:hover {
+	color:#999;
+}
+ul.projekteindex li p {	
+	vertical-align: top;
+	display: inline-block;
+	padding-top:24px;
+	padding-left: 20px;
+	margin:0;
+}
+ul.projekteindex li img {
+	height:100px;
+	width:150px;
+	border: 1px solid #999;
+	padding:4px;
+	display: inline-block;
+}
+
 /* Kontakt */
 #intro_kontaktformular { cursor: pointer;}
 .kontaktformular {
