@@ -130,5 +130,163 @@
 	// Hook into the 'init' action
 	add_action( 'init', 'custom_post_type', 0 );	
 
+	//Advanced Custom Fields
+	if(function_exists("register_field_group"))
+	{
+		register_field_group(array (
+			'id' => 'acf_projekte',
+			'title' => 'Projekte',
+			'fields' => array (
+				array (
+					'key' => 'field_5609019fdf159',
+					'label' => 'Projekt Bild 1',
+					'name' => 'projekt_bild_1',
+					'type' => 'image',
+					'required' => 1,
+					'save_format' => 'object',
+					'preview_size' => 'medium',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_560901d8df15a',
+					'label' => 'Projekt Bild 2',
+					'name' => 'projekt_bild_2',
+					'type' => 'image',
+					'save_format' => 'object',
+					'preview_size' => 'thumbnail',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_560901e2df15b',
+					'label' => 'Projekt Bild 3',
+					'name' => 'projekt_bild_3',
+					'type' => 'image',
+					'save_format' => 'object',
+					'preview_size' => 'thumbnail',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_560901e9df15c',
+					'label' => 'Projekt Bild 4',
+					'name' => 'projekt_bild_4',
+					'type' => 'image',
+					'save_format' => 'object',
+					'preview_size' => 'thumbnail',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_560901f4df15d',
+					'label' => 'Projekt Bild 5',
+					'name' => 'projekt_bild_5',
+					'type' => 'image',
+					'save_format' => 'object',
+					'preview_size' => 'thumbnail',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_560901fbdf15e',
+					'label' => 'Projekt Bild 6',
+					'name' => 'projekt_bild_6',
+					'type' => 'image',
+					'save_format' => 'object',
+					'preview_size' => 'thumbnail',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_5609008e1d256',
+					'label' => 'Standort',
+					'name' => 'standort',
+					'type' => 'text',
+					'required' => 1,
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_5609009f1d257',
+					'label' => 'Baujahr',
+					'name' => 'baujahr',
+					'type' => 'text',
+					'required' => 1,
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_560900b01d258',
+					'label' => 'Bauherr',
+					'name' => 'bauherr',
+					'type' => 'text',
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_560900b91d259',
+					'label' => 'Kosten',
+					'name' => 'kosten',
+					'type' => 'text',
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+				array (
+					'key' => 'field_560900b91d260',
+					'label' => 'Beschreibung',
+					'name' => 'beschreibung',
+					'type' => 'textarea',
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'html',
+					'maxlength' => '',
+				),
+			),
+			'location' => array (
+				array (
+					array (
+						'param' => 'post_type',
+						'operator' => '==',
+						'value' => 'projekte',
+						'order_no' => 0,
+						'group_no' => 0,
+					),
+				),
+			),
+			'options' => array (
+				'position' => 'normal',
+				'layout' => 'no_box',
+				'hide_on_screen' => array (
+					0 => 'the_content',
+					1 => 'excerpt',
+					2 => 'custom_fields',
+					3 => 'discussion',
+					4 => 'comments',
+					5 => 'revisions',
+					6 => 'slug',
+					7 => 'author',
+					8 => 'format',
+					9 => 'send-trackbacks',
+				),
+			),
+			'menu_order' => 0,
+		));
+	}
+
+
+
 ?>
 
