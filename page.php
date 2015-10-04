@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: Greim Default
-*/
-?>
+
 
 <?php get_header(); 
    $featured_image = wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>

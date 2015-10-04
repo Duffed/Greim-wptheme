@@ -91,13 +91,13 @@
     <nav id="navigation">
         <section class="onlymobile menu-bar">
             <a class="fa fa-bars"></a>
-            <a href="index.php"><img src="<?php echo get_template_directory_uri().'/images/greim.png'?>" class="logo" alt="Greim"></a>
+            <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri().'/images/greim.png'?>" class="logo" alt="Greim"></a>
         </section>
         
         <section class="container">
             <ul class="menu notmobile">
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
             </ul>
-            <a href="index.php"><img src="<?php echo get_template_directory_uri().'/images/greim.png'?>" class="logo" alt="Greim"></a>
+            <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri().'/images/greim.png'?>" class="logo" alt="Greim"></a>
         </section>
     </nav>

@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Greim Single
-*/
-?>
-
 <?php get_header(); 
    $featured_image = wp_get_attachment_url(get_post_thumbnail_id($post_id)); ?>
     <header style="background-image: url('<?php echo $featured_image; ?>')">
